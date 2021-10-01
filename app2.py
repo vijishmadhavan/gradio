@@ -17,6 +17,7 @@ from fastai.utils.mem import *
 from fastai.vision import open_image, load_learner, image, torch
 import numpy as np
 import urllib.request
+from urllib.request import urlretrieve
 import PIL.Image
 from io import BytesIO
 import torchvision.transforms as T
