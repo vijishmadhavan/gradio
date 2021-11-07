@@ -55,15 +55,7 @@ urllib.request.urlretrieve(MODEL_URL, "J4photos.pkl")
 path = Path(".")
 learn=load_learner(path, 'J4photos.pkl')
 
-urlretrieve("https://s.hdnux.com/photos/01/07/33/71/18726490/5/1200x0.jpg","soccer1.jpg")
-urlretrieve("https://cdn.vox-cdn.com/thumbor/4J8EqJBsS2qEQltIBuFOJWSn8dc=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22466347/1312893179.jpg","soccer2.jpg")
-urlretrieve("https://cdn.vox-cdn.com/thumbor/VHa7adj0Oie2Ao12RwKbs40i58s=/0x0:2366x2730/1200x800/filters:focal(1180x774:1558x1152)/cdn.vox-cdn.com/uploads/chorus_image/image/69526697/E5GnQUTWEAEK445.0.jpg","baseball.jpg")
-urlretrieve("https://baseball.ca/uploads/images/content/Diodati(1).jpeg","baseball2.jpeg")
 
-sample_images = [["soccer1.jpg"],
-                 ["soccer2.jpg"],
-                 ["baseball.jpg"],
-                 ["baseball2.jpeg"]]
 
 def predict(input):
   img_t = T.ToTensor()(input)
